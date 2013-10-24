@@ -1,6 +1,12 @@
 packer-ubuntu-13.10-docker-serf
 ===========================
 
-A simple [Packer](http://www.packer.io/) template to build and AMI using Ubuntu 13.10 in AWS USW2 region.
+A simple [Packer](http://www.packer.io/) template to build:
 
-Includes [Docker](http://www.docker.io/) and [Serf](http://www.serfdom.io/).
+  1. An AMI using Ubuntu 13.10 in AWS USW-2 (Oregon) region.
+  2. A Virtualbox Vagrant box.
+
+Includes:
+
+  1. [Docker](http://www.docker.io/)
+  2. [Serf](http://www.serfdom.io/).
