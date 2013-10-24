@@ -23,5 +23,8 @@ If that EVENTS_DIR exists the [serf.conf](https://github.com/darron/packer-ubunt
 TODO
 -----------
 
-Use [cloud-init](https://help.ubuntu.com/community/CloudInit) to join cluster on startup.
+Use cloud-init to set the role on boot.
+
 Use cloud-init to grab event handlers on boot.
+
+Use [cloud-init](https://help.ubuntu.com/community/CloudInit) to join cluster on startup.
