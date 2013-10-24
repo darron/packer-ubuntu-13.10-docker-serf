@@ -4,6 +4,7 @@ cd /tmp
 wget https://dl.bintray.com/mitchellh/serf/0.1.1_linux_amd64.zip
 unzip 0.1*
 sudo mv serf /usr/local/bin
+sudo mkdir /etc/serf/
 wget https://raw.github.com/darron/packer-ubuntu-13.10-docker-serf/master/config/serf.conf
 sudo mv serf.conf /etc/init/
 wget https://raw.github.com/darron/packer-ubuntu-13.10-docker-serf/master/config/serf.default
