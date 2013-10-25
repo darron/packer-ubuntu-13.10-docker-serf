@@ -12,5 +12,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "shell", path: "scripts/setup.sh"
     config.vm.provision "shell", path: "scripts/docker.sh"
     config.vm.provision "shell", path: "scripts/serf.sh"
+    config.vm.provision "shell", path: "user-data-file/master"
   end
 end
