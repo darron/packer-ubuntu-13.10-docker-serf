@@ -11,6 +11,18 @@ Includes:
   1. [Docker](http://www.docker.io/)
   2. [Serf](http://www.serfdom.io/).
 
+Configure Serf Roles and adding Handlers
+--------------------------
+
+Using [User data](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html) we can setup the Serf role:
+
+```
+ec2-run-instances --key your-key -g security-group --user-data-file user-data-file/master your-ami --region us-west-2
+ec2-run-instances --key your-key -g security-group --user-data-file user-data-file/route your-ami --region us-west-2
+ec2-run-instances --key your-key -g security-group --user-data-file user-data-file/build your-ami --region us-west-2
+ec2-run-instances --key your-key -g security-group --user-data-file user-data-file/serve your-ami --region us-west-2
+```
+
 Configurable Event Handlers
 ---------------------------
 
@@ -23,8 +35,4 @@ If that EVENTS_DIR exists the [serf.conf](https://github.com/darron/packer-ubunt
 TODO
 -----------
 
-Use cloud-init to set the role on boot.
-
-Use cloud-init to grab event handlers on boot.
-
-Use [cloud-init](https://help.ubuntu.com/community/CloudInit) to join cluster on startup.
+Use cloud-init or user data to join cluster on startup.
