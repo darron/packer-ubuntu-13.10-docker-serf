@@ -35,4 +35,4 @@ If that EVENTS_DIR exists the [serf.conf](https://github.com/darron/packer-ubunt
 TODO
 -----------
 
-Use cloud-init or user data to join cluster on startup.
+Better error checking, etc.
