@@ -10,3 +10,5 @@ sudo apt-get update
 
 # Install
 sudo apt-get -y install lxc-docker
+sudo apt-get -y install linux-image-extra-`uname -r`
+sudo modprobe aufs
