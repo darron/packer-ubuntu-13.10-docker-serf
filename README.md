@@ -9,7 +9,8 @@ A simple [Packer](http://www.packer.io/) template to build:
 Includes:
 
   1. [Docker](http://www.docker.io/)
-  2. [Serf](http://www.serfdom.io/).
+  2. [Serf](http://www.serfdom.io/)
+  3. [Hipache](https://github.com/dotcloud/hipache) - to route traffic to the proper docker container.
 
 Configure Serf Roles and adding Handlers
 --------------------------
