@@ -20,7 +20,8 @@
             "scripts": [
                 "scripts/setup.sh",
                 "scripts/docker.sh",
-                "scripts/serf.sh"
+                "scripts/serf.sh",
+                "scripts/hipache.sh"
             ]
     }],
 
