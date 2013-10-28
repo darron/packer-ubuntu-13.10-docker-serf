@@ -12,6 +12,14 @@ Includes:
   2. [Serf](http://www.serfdom.io/)
   3. [Hipache](https://github.com/dotcloud/hipache) - to route traffic to the proper docker container.
 
+
+To Build the VM's
+--------
+
+`vagrant up`
+
+`packer build template.json`
+
 Configure Serf Roles and adding Handlers
 --------------------------
 
@@ -23,6 +31,8 @@ ec2-run-instances --key your-key -g security-group --user-data-file user-data-fi
 ec2-run-instances --key your-key -g security-group --user-data-file user-data-file/build your-ami --region us-west-2
 ec2-run-instances --key your-key -g security-group --user-data-file user-data-file/serve your-ami --region us-west-2
 ```
+
+This repo pulls example handlers from [darron/serf-docker-events](https://github.com/darron/serf-docker-events) - it could be any handlers at all.
 
 Configurable Event Handlers
 ---------------------------
