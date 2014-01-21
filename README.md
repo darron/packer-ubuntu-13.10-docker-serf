@@ -1,6 +1,11 @@
 packer-ubuntu-13.10-docker-serf
 ===========================
 
+## NOTE: THIS IS DEPRECATED.
+
+## UPDATED RECIPES AVAILABLE [HERE](https://github.com/octohost/octohost-cookbook)
+
+
 A simple [Packer](http://www.packer.io/) template to build:
 
   1. An AMI using Ubuntu 13.10 in AWS USW-2 (Oregon) region.
